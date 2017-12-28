@@ -49,12 +49,12 @@ header {
   position: relative;
 }
 
-.logo {
+.logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-.logo > img {
+.logo {
   height: 3.5rem;
 }
 
