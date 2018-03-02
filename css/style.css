@@ -49,16 +49,16 @@ header {
   position: relative;
 }
 
-.header__logo-box {
+.logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-.header__logo {
+.logo {
   height: 3.5rem;
 }
 
-.header__text-box {
+.text-box {
   /* border: solid blue; */
   position: absolute;
   top: 40%;
