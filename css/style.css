@@ -45,7 +45,7 @@ body {
     text-align: center; }
 
 .heading-primary {
-  color: pink;
+  color: purple;
   text-transform: uppercase;
   /* Animation Text Shaking Hack */
   backface-visibility: hidden;
@@ -119,10 +119,10 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--white {
-  background-color: pink;
+  background-color: purple;
   color: #777; }
   .btn--white::after {
-    background-color: pink; }
+    background-color: purple; }
 
 .btn::after {
   content: '';
