@@ -10,6 +10,8 @@ $color-primary: #55c57a;
 $color-primary-dark: #28b485;
 
 $color-grey-dark: #777;
+$color-white: #fff;
+$color-black: #000;
 
 *,
 *::before,
@@ -65,7 +67,7 @@ header {
 }
 
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
   /* Animation Text Shaking Hack */
   backface-visibility: hidden;
@@ -152,14 +154,14 @@ header {
 }
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+  box-shadow: 0 1rem 2rem rgba($color-black,.2);
 }
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+  box-shadow: 0 .5rem 1rem rgba($color-black,.2);
 }
 .btn--white {
-  background-color: #fff;
+  background-color: $color-white;
   color: $color-grey-dark;
 }
 .btn::after {
@@ -175,7 +177,7 @@ header {
   transition: all .4s;  
 }
 .btn--white::after {
-  background-color: #fff;
+  background-color: $color-white;
 }
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
