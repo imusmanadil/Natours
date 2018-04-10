@@ -51,12 +51,26 @@
   }
 
   &__link {
-    color: $color-white;
-    display: inline-block;
-    padding: 1rem 2rem;
-    font-size: 3rem;
-    font-weight: 300;
-    text-decoration: none;
-    text-transform: uppercase;
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: $color-white;
+      padding: 1rem 2rem;
+      font-size: 3rem;
+      font-weight: 300;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+      background-size: 220%;
+      transition: all .4s;
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-primary;
+      transform: translateX(1rem);
+    }
+    
   }
 }

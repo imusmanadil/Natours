@@ -536,14 +536,21 @@ body {
     text-align: center; }
   .navigation__item {
     margin: 1rem; }
-  .navigation__link {
-    color: #fff;
+  .navigation__link:link, .navigation__link:visited {
     display: inline-block;
+    color: #fff;
     padding: 1rem 2rem;
     font-size: 3rem;
     font-weight: 300;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 220%;
+    transition: all .4s; }
+  .navigation__link:hover, .navigation__link:active {
+    background-position: 100%;
+    color: #55c57a;
+    transform: translateX(1rem); }
 
 .header {
   height: 95vh;
