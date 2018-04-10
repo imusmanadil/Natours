@@ -1,8 +1,15 @@
-  // ClearFix Hack
-  @mixin clearfix {
-    &::after {
-      content: '';
-      display: table;
-      clear: both;
-    }
+// Float Hack
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
   }
+}
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

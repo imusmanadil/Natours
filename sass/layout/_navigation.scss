@@ -26,6 +26,8 @@
     right: 6.5rem;
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
     z-index: 1000;
+
+    transform: scale(55);
   }
 
   &__nav {
@@ -39,14 +41,22 @@
   }
 
   &__list {
-
+    @include centerer;
+    list-style: none;
+    text-align: center;
   }
 
   &__item {
-
+    margin: 1rem;
   }
 
   &__link {
-
+    color: $color-white;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 }
