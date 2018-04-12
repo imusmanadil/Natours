@@ -1,0 +1,36 @@
+.popup {
+  border: 2px solid blue;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-black, .8);
+  z-index: 9999;
+
+  &__content {
+    width: 75%;
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    @include centerer;
+    border-radius: 3px;
+    height: 50rem;
+  }
+
+  &__left {
+    width: ;
+  }
+
+  &__img {
+
+  }
+
+  &__right {
+
+  }
+
+  &__text {
+    
+  }
+
+}
